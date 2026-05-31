@@ -1,5 +1,82 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+button {
+  text-transform: lowercase;
+} /*Возможно, перенести в global.css*/
 
 .page {
+   background-image: var(--bg-image);
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   background-color: #000028;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
+
+.header {
+  height: 100vh;
+  min-height: 668px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  position: relative;
+}
+
+.decorated-zone {
+
+}
+
+.header__decoration {
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 18px;
+  font-family: 'IBM Plex mono', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  line-height: 25px;
+  color: #FF0070;
+  top: 10px;
+  right: 20px;
+}
+
+.header__decoration::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #FF0070;
+  margin-left: 10px;
+  box-shadow: 0 0 4px #FF0070;
+}
+
+.header__theme-menu {
+  grid-row: 1;
+  justify-self: end;
+  align-self: end;
+}
+
+.heading {
+  grid-row: 2;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  justify-self: flex-start;
+  align-self: center;
+}
+
+.title {
+  grid-row: 3;
+  color: #DB00FF;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  justify-self: end;
+  align-self: start;
+}
+
+.title-decor {
+  background-color: #FF0070;
+  color: #000028;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
+
+/*Разобраться, какие цвета в какие файлы разнести по темам*/
