@@ -1,14 +1,13 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-button {
-  text-transform: lowercase;
-} /*Возможно, перенести в global.css*/
-
 .page {
-   background-image: var(--bg-image);
-   background-position: center;
-   background-size: cover;
-   background-attachment: fixed;
-   background-color: #000028;
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: var(--bg-color);
+  padding: var(--page-padding);
+  font-family: 'IBM Plex mono', Arial, Helvetica, sans-serif;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
@@ -16,61 +15,105 @@ button {
   height: 100vh;
   min-height: 668px;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 1fr; /*Пробовала 1fr min-content 1fr, проблема осталась*/
   position: relative;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--header-decor);
+  border-right: 1px solid var(--header-decor);
+  top: 0;
+  right: 0;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--header-decor);
+  border-left: 1px solid var(--header-decor);
+  bottom: 0;
+  left: 0;
 }
 
 .decorated-zone {
 
 }
 
-.header__decoration {
+.rec {
   text-transform: uppercase;
   position: absolute;
   font-size: 18px;
-  font-family: 'IBM Plex mono', Arial, Helvetica, sans-serif;
   font-weight: normal;
   line-height: 25px;
-  color: #FF0070;
-  top: 10px;
-  right: 20px;
+  color: var(--accent-color);
+  top: 0px;
+  right: 10px;
 }
 
-.header__decoration::after {
+.rec::after {
   content: "";
   display: inline-block;
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background-color: #FF0070;
+  background: var(--accent-color);
   margin-left: 10px;
-  box-shadow: 0 0 4px #FF0070;
+  box-shadow: 0 0 2px 2px var(--accent-color);
 }
 
 .header__theme-menu {
   grid-row: 1;
   justify-self: end;
-  align-self: end;
+  align-self: center;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.header__theme-menu-button {
+  text-transform: lowercase;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--button-color);
+  font-size: 18px;
+  line-height: 100%;
 }
 
 .heading {
   grid-row: 2;
+  font-weight: bold;
+  line-height: 82%;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  justify-self: flex-start;
+  justify-self: start;
   align-self: center;
+  color: var(--heading-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 .title {
   grid-row: 3;
-  color: #DB00FF;
-  text-shadow: 4px 4px 0 var(--accent-color);
   justify-self: end;
-  align-self: start;
+  align-self: center;
 }
 
 .title-decor {
-  background-color: #FF0070;
-  color: #000028;
+  background-color: var(--accent-color);
+  color: var(--title-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 130%;
 }
 
 @media (min-width: 768px) {
@@ -78,5 +121,3 @@ button {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
-
-/*Разобраться, какие цвета в какие файлы разнести по темам*/
