@@ -1,3 +1,35 @@
+:root.theme-light {
+  --bg-image: url("../images/cover-image-light.png");
+  --bg-color: #FFC2E6;
+  --corners: #353430;
+  --rec-color: transparent;
+  --screensaver-color: #FFC2E6;
+  --accent-color: #FF8DCB;
+  --title-color: #353430;
+  --subtitle-color: #353430;
+  --text-color: #353430;
+  --button-color: #353430;
+  --button-hover: #32312D;
+  --general-padding: 10px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-image: url("../images/cover-image-light.png");
+    --bg-color: #FFC2E6;
+    --corners: #353430;
+    --rec-color: transparent;
+    --screensaver-color: #FFC2E6;
+    --accent-color: #FF8DCB;
+    --title-color: #353430;
+    --subtitle-color: #353430;
+    --text-color: #353430;
+    --button-color: #353430;
+    --button-hover: #32312D;
+    --general-padding: 10px;
+  }
+}
+
 /*
   Специально для светлой темы при наличии класса.
   Здесь окажутся стили, которые нужно переопределить принудительно,

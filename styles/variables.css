@@ -1,20 +1,21 @@
 :root {
   --bg-image: url("../images/cover-image-dark.png");
   --bg-color: #000028;
-  --header-decor: #FF0070;
-  --heading-color: #DB00FF;
+  --corners: #FF0070;
+  --rec-color: #FF0070;
+  --screensaver-color: #DB00FF;
   --accent-color: #FF0070;
   --title-color: #000028;
   --subtitle-color: #FF0070;
   --text-color: #F1B2CE;
-  --rec-turnoff: none;
   --button-color: #FF0070;
-  --page-padding: 10px;
+  --button-hover: #FF007066;
+  --general-padding: 10px;
 }
 
 @media (min-width: 768px) {
   :root {
-  --page-padding: 20px;
+  --general-padding: 20px;
   }
 }
   /*
