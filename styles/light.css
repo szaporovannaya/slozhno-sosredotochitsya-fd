@@ -1,44 +1,31 @@
 :root.theme-light {
   --bg-image: url("../images/cover-image-light.png");
-  --bg-color: #FFC2E6;
+  --bg-color: #ffc2e6;
   --corners: #353430;
   --rec-color: transparent;
-  --screensaver-color: #FFC2E6;
-  --accent-color: #FF8DCB;
+  --screensaver-color: #ffc2e6;
+  --accent-color: #ff8dcb;
   --title-color: #353430;
   --subtitle-color: #353430;
   --text-color: #353430;
   --button-color: #353430;
-  --button-hover: #32312D;
+  --button-hover: #32312d;
   --general-padding: 10px;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --bg-image: url("../images/cover-image-light.png");
-    --bg-color: #FFC2E6;
+    --bg-color: #ffc2e6;
     --corners: #353430;
     --rec-color: transparent;
-    --screensaver-color: #FFC2E6;
-    --accent-color: #FF8DCB;
+    --screensaver-color: #ffc2e6;
+    --accent-color: #ff8dcb;
     --title-color: #353430;
     --subtitle-color: #353430;
     --text-color: #353430;
     --button-color: #353430;
-    --button-hover: #32312D;
+    --button-hover: #32312d;
     --general-padding: 10px;
   }
-}
-
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
-:root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
 }

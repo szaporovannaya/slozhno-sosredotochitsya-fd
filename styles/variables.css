@@ -1,24 +1,20 @@
 :root {
   --bg-image: url("../images/cover-image-dark.png");
   --bg-color: #000028;
-  --corners: #FF0070;
-  --rec-color: #FF0070;
-  --screensaver-color: #DB00FF;
-  --accent-color: #FF0070;
+  --corners: #ff0070;
+  --rec-color: #ff0070;
+  --screensaver-color: #db00ff;
+  --accent-color: #ff0070;
   --title-color: #000028;
-  --subtitle-color: #FF0070;
-  --text-color: #F1B2CE;
-  --button-color: #FF0070;
-  --button-hover: #FF007066;
+  --subtitle-color: #ff0070;
+  --text-color: #f1b2ce;
+  --button-color: #ff0070;
+  --button-hover: #ff007066;
   --general-padding: 10px;
 }
 
 @media (min-width: 768px) {
   :root {
-  --general-padding: 20px;
+    --general-padding: 20px;
   }
 }
-  /*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
