@@ -38,3 +38,7 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+a:focus {
+  outline: none;
+}
