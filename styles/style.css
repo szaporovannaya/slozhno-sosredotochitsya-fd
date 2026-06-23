@@ -151,7 +151,6 @@
 }
 
 .main__section-paragraph {
-  /*padding-top: 10px;*/
   color: var(--text-color);
   font-size: 18px;
   line-height: 130%;
@@ -283,7 +282,7 @@
   }
 
   .grid-group-why {
-    grid-template-columns: 236px 472px;
+    grid-template-columns: 236px /*472px*/ 1fr;
   }
 
   .grid-group-why article {
@@ -295,7 +294,7 @@
   }
 
   .grid-group-how {
-    grid-template-columns: 236px 472px;
+    grid-template-columns: 236px /*472px*/ 1fr;
   }
 
   .main__section-gallery {
@@ -356,7 +355,7 @@
   }
 
   .grid-group-why {
-    grid-template-columns: 315px 649px;
+    grid-template-columns: 315px /*649px*/ 1fr;
   }
 
   .grid-group-what {
@@ -375,7 +374,7 @@
   }
 
   .grid-group-how {
-    grid-template-columns: 315px 649px;
+    grid-template-columns: 315px /*649px*/ 1fr;
   }
 
   .main__section-gallery {
