@@ -1,5 +1,5 @@
 :root.theme-light {
-  --bg-image: url("../images/cover-image-light.png");
+  --bg-image: url('../images/cover-image-light.png');
   --bg-color: #ffc2e6;
   --corners: #353430;
   --rec-color: transparent;
@@ -9,13 +9,15 @@
   --subtitle-color: #353430;
   --text-color: #353430;
   --button-color: #353430;
-  --button-hover: #32312d;
+  --button-hover: rgb(53, 52, 48, 0.4);
   --general-padding: 10px;
+  --vibrant-textshadow: #ff0070;
+  --h2-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-image: url("../images/cover-image-light.png");
+    --bg-image: url('../images/cover-image-light.png');
     --bg-color: #ffc2e6;
     --corners: #353430;
     --rec-color: transparent;
@@ -27,5 +29,7 @@
     --button-color: #353430;
     --button-hover: #32312d;
     --general-padding: 10px;
+    --vibrant-textshadow: #ff0070;
+    --h2-color: #353430;
   }
 }

@@ -1,5 +1,5 @@
 :root {
-  --bg-image: url("../images/cover-image-dark.png");
+  --bg-image: url('../images/cover-image-dark.png');
   --bg-color: #000028;
   --corners: #ff0070;
   --rec-color: #ff0070;
@@ -11,6 +11,7 @@
   --button-color: #ff0070;
   --button-hover: #ff007066;
   --general-padding: 10px;
+  --h2-color: #ff0070;
 }
 
 @media (min-width: 768px) {

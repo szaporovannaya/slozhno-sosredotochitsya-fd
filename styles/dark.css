@@ -1,5 +1,5 @@
 :root.theme-dark {
-  --bg-image: url("../images/cover-image-dark.png");
+  --bg-image: url('../images/cover-image-dark.png');
   --bg-color: #000028;
   --corners: #ff0070;
   --rec-color: #ff0070;
@@ -11,21 +11,5 @@
   --button-color: #ff0070;
   --button-hover: #ff007066;
   --general-padding: 10px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-image: url("../images/cover-image-dark.png");
-    --bg-color: #000028;
-    --corners: #ff0070;
-    --rec-color: #ff0070;
-    --screensaver-color: #db00ff;
-    --accent-color: #ff0070;
-    --title-color: #000028;
-    --subtitle-color: #ff0070;
-    --text-color: #f1b2ce;
-    --button-color: #ff0070;
-    --button-hover: #ff007066;
-    --general-padding: 10px;
-  }
+  --h2-color: #ff0070;
 }
