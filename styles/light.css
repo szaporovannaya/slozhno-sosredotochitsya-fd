@@ -10,9 +10,8 @@
   --text-color: #353430;
   --button-color: #353430;
   --button-hover: rgb(53, 52, 48, 0.4);
-  --general-padding: 10px;
   --vibrant-textshadow: #ff0070;
-  --h2-color: #353430;
+  --topic-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -28,8 +27,7 @@
     --text-color: #353430;
     --button-color: #353430;
     --button-hover: #32312d;
-    --general-padding: 10px;
     --vibrant-textshadow: #ff0070;
-    --h2-color: #353430;
+    --topic-color: #353430;
   }
 }

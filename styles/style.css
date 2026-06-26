@@ -144,7 +144,7 @@
 }
 
 .main__section-title {
-  color: var(--h2-color);
+  color: var(--topic-color);
   font-size: 18px;
   line-height: 130%;
 }

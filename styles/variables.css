@@ -11,7 +11,7 @@
   --button-color: #ff0070;
   --button-hover: #ff007066;
   --general-padding: 10px;
-  --h2-color: #ff0070;
+  --topic-color: #ff0070;
 }
 
 @media (min-width: 768px) {
